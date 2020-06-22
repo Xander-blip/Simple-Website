@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+<!--main stylesheet with all the css in it -->
+<link rel="stylesheet" href="mainstyles.css">
+
+</head>
+
+<body>
+<div class="Container">
+
+	<!--The following div tag encompasses the header. The header will have the logo and title in  it. -->
+	<div id="header">
+	
+
+	  <img src="Images/logo.jpg" alt="Brewed Awakening Logo" title="Brewed Awakening Logo" />
+<div id="Title">
+The Brewed Awakening
+</div>
+	 </div>
+
+
+	<!--The following div tag encompasses the menu. The menu will have navigation tags to each item of food or drink, those navigation tags will lead you to a page that explains in a bit of detail what the item is. Cost of the item will be included in the menu, not through a link -->
+	<div id="menu" >
+	<ul>
+	<li class="listitem"><a href="index.html">Home</a></li>
+	<li class="listitem"><a href="Coffee.html">Coffee</a></li>
+	<li class="listitem"><a href="RaisinCupcake.html">Cupcake</a></li>
+	<li class="listitem"><a href="MincePie.html">Mince Pie</a></li>
+	<li class="listitem active">Contact Us</li>
+	</ul>
+	</div>
+
+<!--The following div tag encompasses the general content of the page. The content will include everyting that needs to be talked abut without a navigation link. -->
+<div id="content">
+<img src="Images/phone.jpg" class="textimage" alt="Phone" title="phone">
+<h1> Contact Us </h1>
+<p>Please feel free to contact us with any feedback or complaints. We will try and cater to all your needs and suggestions except changing our prices, those are fixed. No refunds.</p>
+<!-- The  following code is my form -->
+<form action="">
+  <label for="firstname">First name:</label><br>
+  <input type="text" id="firstname" name="firstname" value=""><br>
+  <label for="lastname">Last name:</label><br>
+  <input type="text" id="lastname" name="lastname" value=""><br>
+  <label for="Comment">Your Comments</label>
+  <br>
+  <textarea id="Comment" name="Comment" rows="5" cols="40"></textarea><br><br>
+  <input type="submit" value="Submit">
+</form>
+</div>
+
+
+	<!--The following div tag encompasses the footer. The footer will have navigation tags  to a Contact Us page and a Help page. -->
+	<div id="footer">
+	
+	  &copy; 2020 Xander Richards
+	</div>
+</div>
+</body>
+
+</html>

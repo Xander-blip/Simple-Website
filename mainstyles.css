@@ -1,0 +1,126 @@
+
+  body {
+   background-color: #ebe0db;
+   margin: 0px;
+  }
+   
+   /* This tag wraps the entire html and all the other divs and is the main grid. */
+  .Container{
+ display: grid;
+ /* the following 4 tags outline the grid and how large each section is (how many and how large each row and column is). */
+grid-template-columns: 3px 165px 8px auto 4px;
+grid-template-rows: 114px auto 100px;
+grid-column-gap: 8px;
+grid-row-gap: 8px;
+ width: 100vw; /*these 2 tags make the grid scale to use 100 percent of the view height, so no matter how small the screen is itll use up all the space */
+  height: 100vh;
+ 
+  }
+ 
+ /*this is the header section of the grid */
+  #header{
+	  /*this means that its grid placement is 1,1 to 2,6 */
+  grid-area: 1 / 1 / 2 / 6;
+  background-color: #5f656d;
+  border: 2px solid black;
+  vertical-align:top;
+  position: relative;
+  }
+  
+/*this is the general content of the grid (description and images) */
+  #content{
+    background-color: white;
+	/*this means that its grid placement is 2,4 to 3,5 */
+	grid-area: 2 / 4 / 3 / 5;
+	box-shadow: 4px 4px #5f656d;
+	border-radius: 5px;
+	padding: 20px;
+	font-size: 20px;
+  }
+  
+  /*this is the menu which holds all the navigation tags to each item of food */
+  #menu
+  {
+	  /*this means that its grid placement is 2,2 to 3,3*/
+ grid-area: 2 / 2 / 3 /3;
+   background-color: #202326;
+  border-radius: 5px;
+  box-shadow: 4px 4px #5f656d;
+  }
+  
+  /*this is the unordered list portion of the menu */
+  #menu ul
+  {
+   list-style: none;
+   margin: 0px;
+   padding: 10px;
+  }
+  
+  /*this covers the links in the unordered list in the menu */
+   #menu ul a:link, #menu ul a:visited
+  {
+    text-decoration: none;
+	color: white;
+	padding: 5px 0 5px 0;
+  }
+  
+  /*This just means that it turns orange when hovered over with a mouse */
+  #menu ul a:hover
+  {
+   background-color: #c65e3a;
+  }
+  .listitem
+  {
+  width:100%;
+  }
+  .listitem a
+  {
+	line-height:24px;
+	width:100%;
+	text-align: center;
+	display: inline-block;
+  }
+  
+  .active
+  {
+  line-height:24px;
+  /*this means that its 100% wide*/
+	width:100%;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	background-color: #733b29;
+	padding: 5px 0 5px 0;
+  }
+  
+  /* this is the footer tag which takes up the bottom of the screen */
+  #footer{
+	  /* this means that its grid placement is from 3, 1 to 4, 6 */
+ grid-area: 3 / 1 /4 / 6;
+  background-color: #5f656d;
+  border: 2px solid black;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 14px;
+  color: #ebe0db;
+  }
+
+/* this is the big words at the top*/
+#Title{
+display:inline-block;
+position: fixed;
+top:0;
+font-size: 5vw; /*this will set the font size to 5% of the view width*/
+color: #ebe0d8;
+text-align: center;
+/* this means that its width will be 100%  of the view width minus 169px to allow for logo and border*/
+width: calc(100vw - 169px);
+white-space: nowrap;
+}
+.textimage{
+	float:right;
+margin: 10px;
+	border-radius:5px;
+	box-shadow:3px 3px #5f656d;
+}
